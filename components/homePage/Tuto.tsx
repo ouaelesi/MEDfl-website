@@ -64,7 +64,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -96,7 +96,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -128,7 +128,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -160,7 +160,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -192,7 +192,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -224,7 +224,7 @@ const steps: Step[] = [
       {
         label: " ",
         href: "/docs/quickstart#connect",
-        icon: <Play className="h-4 w-4" />,
+        icon: <Rocket className="h-4 w-4" />,
         variant: "red",
         aria: "Open quickstart connect",
       },
@@ -256,7 +256,7 @@ export default function ScrollTutorial() {
         <h2 className="text-4xl font-extrabold tracking-tight text-text md:text-5xl">
           From Setup to Breakthroughs
         </h2>
-        <p className="mx-auto mt-3 w-full font-medium text-text md:w-3/5">
+        <p className="mx-auto mt-3 px-4 w-full font-medium text-text md:w-3/5">
           Connect sites securely, validate datasets, design pipelines, launch
           federated rounds, and analyze results—end to end.
         </p>
@@ -281,7 +281,7 @@ export default function ScrollTutorial() {
           </div>
 
           {/* RIGHT: sticky stage */}
-          <div className="relative lg:col-span-7 ">
+          <div className="relative lg:col-span-7 hidden md:block">
             <div className="relative h-[60vh] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] lg:sticky lg:top-56 md:h-[45vh]">
               <div className="absolute inset-0 -z-0 rounded-xl bg-gradient-to-r from-primary via-secondary to-red-primary opacity-50 blur-2xl"></div>
               <Image
@@ -382,7 +382,7 @@ function StepBlock({
   }, [inView, onEnter]);
 
   return (
-    <li ref={ref} className="flex min-h-[70vh] items-center py-12">
+    <li ref={ref} className="flex md:min-h-[70vh] items-center py-12">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{
@@ -434,7 +434,7 @@ function StepBlock({
                   a.variant === "primary"
                     ? "text-primary border border-primary/20  hover:brightness-95"
                     : a.variant === "red"
-                    ? "text-red-500 border border-red-500/40  hover:brightness-95"
+                    ? "text-secondary border border-secondary/40  hover:brightness-95"
                     : "border border-foreground/20 bg-transparent hover:bg-foreground/10",
                 ].join(" ")}
               >

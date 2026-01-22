@@ -102,26 +102,7 @@ client.start()`;
           </div>
 
           {/* Quick links */}
-          <div className="flex gap-2">
-            <CTA
-              href="/docs"
-              icon={<BookOpen className="h-4 w-4 text-primary" />}
-            >
-              Docs
-            </CTA>
-            <CTA
-              href="/download"
-              icon={<Download className="h-4 w-4 text-secondary" />}
-            >
-              Installation
-            </CTA>
-            <CTA
-              href="https://github.com/medfl-org/medfl"
-              icon={<Github className="h-4 w-4 text-yellow-400" />}
-            >
-              GitHub
-            </CTA>
-          </div>
+        
         </div>
 
         {/* Tabs */}
@@ -142,7 +123,28 @@ client.start()`;
 
         {/* Content */}
         {tab === "python" ? (
-          <div className="mt-8 grid lg:grid-cols-2 gap-6">
+          <div>
+              <div className="flex gap-2 mt-8">
+            <CTA
+              href="https://medfl.readthedocs.io/en/latest/"
+              icon={<BookOpen className="h-4 w-4 text-primary" />}
+            >
+              Docs
+            </CTA>
+            <CTA
+              href="https://pypi.org/project/medfl/"
+              icon={<Download className="h-4 w-4 text-secondary" />}
+            >
+              Installation
+            </CTA>
+            <CTA
+              href="https://github.com/medfl-org/medfl"
+              icon={<Github className="h-4 w-4 text-yellow-400" />}
+            >
+              GitHub
+            </CTA>
+          </div>
+  <div className="mt-8 grid lg:grid-cols-2 gap-6">
             <Card
               title="Install with pip"
               icon={<Terminal className="h-5 w-5" />}
@@ -154,21 +156,21 @@ client.start()`;
               </p>
             </Card>
 
-            <Card
+       {/*      <Card
               title="Server: minimal FedAvg"
               icon={<Server className="h-5 w-5" />}
             >
               <CodeBlock lang="python" code={serverExample} />
-            </Card>
+            </Card> */}
 
-            <Card
+    {/*         <Card
               title="Client: XGBoost example"
               icon={<Package className="h-5 w-5" />}
             >
               <CodeBlock lang="python" code={clientExample} />
-            </Card>
+            </Card> */}
 
-            <Card title="Next steps" icon={<BookOpen className="h-5 w-5" />}>
+      {/*       <Card title="Next steps" icon={<BookOpen className="h-5 w-5" />}>
               <ul className="text-sm space-y-2 text-text/80 list-disc pl-5">
                 <li>
                   Run the server, then start multiple clients on different
@@ -183,9 +185,32 @@ client.start()`;
                 <SmallLink href="/docs/quickstart">Quickstart</SmallLink>
                 <SmallLink href="/docs/api">API Reference</SmallLink>
               </div>
-            </Card>
+            </Card> */}
           </div>
+          </div>
+        
         ) : (
+          <div>
+            <div className="flex gap-2 mt-8">
+            <CTA
+              href="https://medfl.readthedocs.io/en/latest/"
+              icon={<BookOpen className="h-4 w-4 text-primary" />}
+            >
+              Docs
+            </CTA>
+            <CTA
+              href="https://pypi.org/project/medfl/"
+              icon={<Download className="h-4 w-4 text-secondary" />}
+            >
+              Installation
+            </CTA>
+            <CTA
+              href="https://github.com/MEDomicsLab/MEDomics/tree/dev_medfl_sqllite"
+              icon={<Github className="h-4 w-4 text-yellow-400" />}
+            >
+              GitHub
+            </CTA>
+          </div>
           <div className="mt-8 grid lg:grid-cols-3 gap-6">
             <Card title="Download" icon={<Download className="h-5 w-5" />}>
               <div className="grid grid-cols-1 gap-2">
@@ -203,7 +228,7 @@ client.start()`;
                 </SmallLink>
               </div>
             </Card>
-
+{/* 
             <Card title="Run & connect" icon={<Server className="h-5 w-5" />}>
               <ul className="text-sm space-y-2 text-text/80 list-disc pl-5">
                 <li>
@@ -223,9 +248,9 @@ client.start()`;
                   Desktop quickstart
                 </SmallLink>
               </div>
-            </Card>
+            </Card> */}
 
-            <Card
+           {/*  <Card
               title="Where to next?"
               icon={<BookOpen className="h-5 w-5" />}
             >
@@ -240,8 +265,10 @@ client.start()`;
                   GitHub
                 </SmallLink>
               </div>
-            </Card>
+            </Card> */}
           </div>
+          </div>
+               
         )}
       </div>
     </section>
@@ -262,6 +289,7 @@ function CTA({
   return (
     <Link
       href={href}
+      target="blank"
       className="inline-flex items-center gap-2 rounded-xl border border-foreground/15   bg-foreground/[0.06]   px-3 py-2 text-sm hover:bg-white/[0.1] transition"
     >
       {icon}
@@ -311,7 +339,7 @@ function Card({
       <div className="absolute left-5 top-3 rounded-full bg-red-400  w-3 h-3 text-xs"></div>
       <div className="absolute left-9 top-3 rounded-full bg-green-400  w-3 h-3 text-xs"></div>
       <div className="absolute left-13 top-3 rounded-full bg-yellow-400  w-3 h-3 text-xs"></div>
-      <div className="flex items-center gap-2 text-sm text-text/70 mb-3">
+      <div className="flex items-center gap-2 text-sm text-text/70 my-3">
         <div className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/[0.06]   border border-white/10">
           {icon}
         </div>

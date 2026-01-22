@@ -7,6 +7,7 @@ import {
   Globe,
   Handshake,
   Play,
+  Rocket,
   ShieldCheck,
   Smile,
   Sparkles,
@@ -73,10 +74,10 @@ export default function HeroSection() {
     <section className="relative md:pb-40 h-screen isolate flex flex-col justify-center  text-text">
       {/* glows + grid */}
 
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 pt-14 md:px-10 lg:grid-cols-12 lg:gap-16 lg:pt-20">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 pt-7 md:px-10 lg:grid-cols-12 lg:gap-16 lg:pt-20">
         {/* LEFT: copy */}
         <div className="pb-15 relative flex flex-col justify-center gap-4 lg:col-span-6 xl:col-span-6">
-          <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
+          <h1 className="text-3xl font-extrabold tracking-tight md:text-5xl">
             <span className="text-secondary relative">
               <span className=" relative">MEDfl</span>
             </span>
@@ -94,25 +95,28 @@ export default function HeroSection() {
           <div className="flex gap-4">
             <Link
               href="/docs/overview"
-              className="inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
+              className="inline-flex items-center gap-2 rounded-full bg-secondary md:px-5 px-3 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
             >
               <BookOpen className="h-4 w-4" />
-              Read the Docs
+              
+               <span className="hidden md:block">Documentation</span> 
             </Link>
             <Link
               href="/docs/quickstart"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
+              className="inline-flex items-center gap-2 rounded-full bg-primary md:px-5 px-3 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
             >
-              <Play className="h-4 w-4" /> Quickstart
+              <Rocket className="h-4 w-4" /> 
+               <span className="hidden md:block">Quickstart</span> 
+              
             </Link>
             <a
               href="https://github.com/MEDomics-UdeS/MEDfl"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-5 py-3 text-sm font-medium transition hover:bg-foreground/10"
+              className="inline-flex items-center gap-2 rounded-full border border-foreground/20 md:px-5 px-3 py-3  text-sm font-medium transition hover:bg-foreground/10"
             >
               <Github className="h-4 w-4" />
-              GitHub
+              <span className="hidden md:block">GitHub</span> 
             </a>
           </div>
 
@@ -126,14 +130,14 @@ export default function HeroSection() {
         </div>
 
         {/* RIGHT: image + floating badges/cards */}
-        <div className="lg:col-span-6 xl:col-span-6">
+        <div className="lg:col-span-6 xl:col-span-6  hidden md:block ">
           <div className="relative mx-auto">
             <div className="relative">
               <div
                 className="absolute -inset-6 rounded-[2.5rem]  blur-3xl transition-opacity duration-500"
                 aria-hidden
               />
-              <div className="relative  -mt-10 rounded-[1.75rem]">
+              <div className="relative  -mt-10 rounded-[1.75rem] ">
                 {/* <Image
                   className="absolute top-50 opacity-40 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full "
                   src="/medfl_logo.png"
@@ -145,7 +149,7 @@ export default function HeroSection() {
               </div>
 
               {/* Left-top badge */}
-              <div className="absolute right-0 top-20 -translate-y-1/2 sm:block md:left-0">
+              <div className="absolute right-0 top-20 -translate-y-1/2 sm:block md:left-0 ">
                 <div className="inline-flex items-center gap-2 rounded-xl bg-foreground/10   px-4 py-2 backdrop-blur-sm ">
                   <span className="flex h-6 w-6 items-center justify-center rounded-lg">
                     <Globe className="h-4 w-4 text-secondary " />
