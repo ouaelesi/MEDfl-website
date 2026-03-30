@@ -81,7 +81,7 @@ export default function HeroSection() {
             <span className="text-secondary relative">
               <span className=" relative">MEDfl</span>
             </span>
-            , A <span className="relative text-primary">Collaborative</span>{" "}
+            : A <span className="relative text-primary">Collaborative</span>{" "}
             Framework for Federated Learning in{" "}
             <span className="text-primary relative">
               <span className="relative">Medicine</span>
