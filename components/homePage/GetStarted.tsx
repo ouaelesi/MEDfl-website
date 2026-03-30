@@ -72,7 +72,7 @@ client = FlowerClient(
 client.start()`;
 
   return (
-    <section className="relative w-full  text-text">
+    <section className="relative w-full  text-text" id="installation">
       <Image
         src={tab == "python" ? "/images/code.png" : "/images/tutos/home.png"}
         width={2050}
