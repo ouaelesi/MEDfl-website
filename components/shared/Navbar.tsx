@@ -56,13 +56,13 @@ function NavA({
 
 export default function Navbar({
   links = [
-    { label: "Docs", href: "/docs/overview" },
-    { label: "Architecture", href: "/docs/real-world" },
-    { label: "Installation", href: "/docs/simulation" },
-    { label: "Tutorials", href: "/docs/pipelines/builder" },
-    { label: "Blogs", href: "/docs/api" },
+    { label: "Docs", href: "https://medomicslab.gitbook.io/medfl-app-docs" ,  external: true, },
+    
+    { label: "Installation", href: "/#installation" },
+    { label: "Tutorials", href: "/#tutos" },
   ],
-  cta = { label: "Quickstart", href: "/docs/quickstart" },
+  cta = { label: "Quickstart", href: "https://medomicslab.gitbook.io/medfl-app-docs/medfl-review",
+    external: true, },
   secondaryCta = {
     label: "GitHub",
     href: "https://github.com/MEDomics-UdeS/MEDfl",
