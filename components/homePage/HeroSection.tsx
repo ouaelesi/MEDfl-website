@@ -79,7 +79,7 @@ export default function HeroSection() {
         <div className="pb-15 relative flex flex-col justify-center gap-4 lg:col-span-6 xl:col-span-6">
           <h1 className="text-3xl font-extrabold tracking-tight md:text-5xl">
             <span className="text-secondary relative">
-              <span className=" relative">MEDfl:</span>
+              <span className=" relative">MEDfl:{" "}</span>
             </span>
              A <span className="relative text-primary">Collaborative</span>{" "}
             Framework for Federated Learning in{" "}
