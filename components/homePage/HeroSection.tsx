@@ -94,15 +94,16 @@ export default function HeroSection() {
 
           <div className="flex gap-4">
             <Link
-              href="/docs/overview"
+              href="https://medomicslab.gitbook.io/medfl-app-docs"
               className="inline-flex items-center gap-2 rounded-full bg-secondary md:px-5 px-3 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
-            >
+            target="_blank"
+              >
               <BookOpen className="h-4 w-4" />
-              
+    
                <span className="hidden md:block">Documentation</span> 
             </Link>
             <Link
-              href="/docs/quickstart"
+              href="https://medomicslab.gitbook.io/medfl-app-docs/medfl-review"
               className="inline-flex items-center gap-2 rounded-full bg-primary md:px-5 px-3 py-3 text-sm font-medium text-black shadow-lg transition hover:brightness-95"
             >
               <Rocket className="h-4 w-4" /> 
