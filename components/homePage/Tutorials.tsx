@@ -66,7 +66,7 @@ const tutorials: Tutorial[] = [
 
 export default function TutorialsSection() {
   return (
-    <section className="relative w-full  text-text">
+    <section className="relative w-full  text-text" id="tutos">
       {/* soft radial accents */}
       {/* <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(900px_450px_at_80%_10%,rgba(59,130,246,0.08),transparent_60%),radial-gradient(700px_350px_at_10%_90%,rgba(6,182,212,0.06),transparent_50%)]" /> */}
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
